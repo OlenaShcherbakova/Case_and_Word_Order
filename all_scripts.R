@@ -2,8 +2,6 @@
 
 source("library.R")
 
-source("get_external_data.R")
-
 #phylopath analysis
 source("phylopath_3_variables.R")
 
