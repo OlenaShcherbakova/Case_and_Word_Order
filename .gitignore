@@ -1,0 +1,14 @@
+#default
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+#non default
+*.Rproj
+*.pptx
+*.doc
+*.docx
+*.pdf
+*.svg
+*.png
