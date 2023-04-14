@@ -18,11 +18,7 @@ Steps 2 and 3 are time-consuming, so all relevant output files have already been
 
 The data that serves as the input for the analysis comes from Grambank, (v1.0, Skirgård et al (in prep)), AUTOTYP (v1.01, Bickel et al (2022)), Glottolog (v4.5), and EDGE-tree (v1.0.0, Bouckaert et al (2023)).
 
-All data is available
-openly via the science archive Zenodo and/or public GitHub repositories. A
-modified version of the Ethnologue data is available in this repository, it contains
-transformed population numbers that cannot be transformed back into the
-raw numbers. The MCCT EDGE-tree is found in a file inside grambank-analysed.
+All data is available openly via the science archive Zenodo and/or public GitHub repositories. 
 
 Zenodo locations:
 
