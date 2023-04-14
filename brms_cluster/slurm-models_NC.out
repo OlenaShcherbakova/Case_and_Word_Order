@@ -1,0 +1,423 @@
+running
+  '/data/tools/r/R-4.1.2/bin/R --no-echo --no-restore --file=brms_models_NC.R'
+
+Installing package into ‘/data/users/shcherbakova/R_brms_CS1/rlib’
+(as ‘lib’ is unspecified)
+Installing package into ‘/data/users/shcherbakova/R_brms_CS1/rlib’
+(as ‘lib’ is unspecified)
+Warning: dependency ‘graph’ is not available
+also installing the dependency ‘ggm’
+
+trying URL 'http://cran.rstudio.com/src/contrib/ggm_2.5.tar.gz'
+Content type 'application/x-gzip' length 109414 bytes (106 KB)
+==================================================
+downloaded 106 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/phylopath_1.1.3.tar.gz'
+Content type 'application/x-gzip' length 765833 bytes (747 KB)
+==================================================
+downloaded 747 KB
+
+ERROR: dependency ‘graph’ is not available for package ‘ggm’
+* removing ‘/data/users/shcherbakova/R_brms_CS1/rlib/ggm’
+ERROR: dependency ‘ggm’ is not available for package ‘phylopath’
+* removing ‘/data/users/shcherbakova/R_brms_CS1/rlib/phylopath’
+
+The downloaded source packages are in
+	‘/tmp/RtmpVUVBQP/downloaded_packages’
+Warning messages:
+1: package ‘bayestraitr’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+2: In p_install(package, character.only = TRUE, ...) : 
+3: In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called ‘bayestraitr’
+4: In utils::install.packages(package, ...) :
+  installation of package ‘ggm’ had non-zero exit status
+5: In utils::install.packages(package, ...) :
+  installation of package ‘phylopath’ had non-zero exit status
+6: In p_install(package, character.only = TRUE, ...) : 
+7: In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called ‘phylopath’
+8: In pacman::p_load(tidyverse, reshape2, stringr, readr, tidyr, dplyr,  :
+  Failed to install/load:
+bayestraitr, phylopath
+Rows: 25900 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (2): Glottocode, AUTOTYP_area
+dbl (2): Longitude, Latitude
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+Joining, by = "Glottocode"
+[1] TRUE
+Compiling Stan program...
+Start sampling
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 2).
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 3).
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 4).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.032122 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 321.22 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.03337 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 333.7 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 3: 
+Chain 3: Gradient evaluation took 0.03406 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 340.6 seconds.
+Chain 3: Adjust your expectations accordingly!
+Chain 3: 
+Chain 3: 
+Chain 4: 
+Chain 4: Gradient evaluation took 0.037212 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 372.12 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 2: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 1: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 3: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 4: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 4: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 1: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 2: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 3: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 4: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 2: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 1: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 3: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 4: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 2: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 1: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 3: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 4: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 2: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 1: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 3: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 4: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 4: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 2: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 2: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 1: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 1: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 3: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 3: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 2: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 1: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 3: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 4: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 2: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 1: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 3: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 4: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 2: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 1: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 3: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 2: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 1: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 4: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 3: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 2: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 13761.4 seconds (Warm-up)
+Chain 2:                12054.8 seconds (Sampling)
+Chain 2:                25816.1 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 13900.6 seconds (Warm-up)
+Chain 1:                11976.1 seconds (Sampling)
+Chain 1:                25876.7 seconds (Total)
+Chain 1: 
+Chain 3: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 3: 
+Chain 3:  Elapsed Time: 14045.8 seconds (Warm-up)
+Chain 3:                11970.2 seconds (Sampling)
+Chain 3:                26016.1 seconds (Total)
+Chain 3: 
+Chain 4: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 4: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 13462.3 seconds (Warm-up)
+Chain 4:                15167.1 seconds (Sampling)
+Chain 4:                28629.4 seconds (Total)
+Chain 4: 
+Model summary: model 1 - phy Family: bernoulli 
+  Links: mu = logit 
+Formula: Nominal_case ~ 1 + (1 | gr(Glottocode, cov = A)) 
+   Data: grambank_phylopath_compl (Number of observations: 1705) 
+  Draws: 4 chains, each with iter = 7000; warmup = 3500; thin = 1;
+         total post-warmup draws = 14000
+
+Group-Level Effects: 
+~Glottocode (Number of levels: 1705) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.87      0.13     0.65     1.17 1.00     2108     4233
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    -1.02      1.76    -4.70     2.33 1.00     2627     3266
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+Compiling Stan program...
+Start sampling
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 2).
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 3).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.024334 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 243.34 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+
+SAMPLING FOR MODEL '42ed62fac02246425b4cd96fdd3d07fc' NOW (CHAIN 4).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.025635 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 256.35 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 3: 
+Chain 3: Gradient evaluation took 0.026953 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 269.53 seconds.
+Chain 3: Adjust your expectations accordingly!
+Chain 3: 
+Chain 3: 
+Chain 4: 
+Chain 4: Gradient evaluation took 0.029305 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 293.05 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 1: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 2: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 3: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 4: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 1: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 4: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 3: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 2: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 4: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 1: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 3: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 2: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 1: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 4: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 3: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 2: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 1: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 4: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 3: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 2: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 1: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 1: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 4: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 4: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 3: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 3: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 2: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 2: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 3: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 2: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 1: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 3: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 4: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 2: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 3: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 2: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 1: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 4: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 3: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 2: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 3: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 3: 
+Chain 3:  Elapsed Time: 4372.8 seconds (Warm-up)
+Chain 3:                2856.37 seconds (Sampling)
+Chain 3:                7229.16 seconds (Total)
+Chain 3: 
+Chain 1: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 4: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 2: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 4684.11 seconds (Warm-up)
+Chain 2:                3040.54 seconds (Sampling)
+Chain 2:                7724.64 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 4: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 1: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 4268.91 seconds (Warm-up)
+Chain 1:                5096.84 seconds (Sampling)
+Chain 1:                9365.74 seconds (Total)
+Chain 1: 
+Chain 4: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 4367.13 seconds (Warm-up)
+Chain 4:                5061.27 seconds (Sampling)
+Chain 4:                9428.4 seconds (Total)
+Chain 4: 
+Model summary: model 2 - spa Family: bernoulli 
+  Links: mu = logit 
+Formula: Nominal_case ~ 1 + (1 | gr(Glottocode2, cov = spatial_covar_mat_local)) 
+   Data: grambank_phylopath_compl (Number of observations: 1705) 
+  Draws: 4 chains, each with iter = 7000; warmup = 3500; thin = 1;
+         total post-warmup draws = 14000
+
+Group-Level Effects: 
+~Glottocode2 (Number of levels: 1705) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     3.12      0.35     2.52     3.86 1.00     3286     5928
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    -1.08      0.21    -1.49    -0.69 1.00     6536     8372
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+Compiling Stan program...
+Start sampling
+
+SAMPLING FOR MODEL 'a687c91fda89cf052f64a394ac04d205' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'a687c91fda89cf052f64a394ac04d205' NOW (CHAIN 2).
+
+SAMPLING FOR MODEL 'a687c91fda89cf052f64a394ac04d205' NOW (CHAIN 3).
+
+SAMPLING FOR MODEL 'a687c91fda89cf052f64a394ac04d205' NOW (CHAIN 4).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.05459 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 545.9 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.056518 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 565.18 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 3: 
+Chain 3: Gradient evaluation took 0.058233 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 582.33 seconds.
+Chain 3: Adjust your expectations accordingly!
+Chain 3: 
+Chain 3: 
+Chain 4: 
+Chain 4: Gradient evaluation took 0.062066 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 620.66 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 1: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 2: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 3: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 4: Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain 1: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 4: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 3: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 2: Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain 4: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 1: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 3: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 2: Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain 4: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 1: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 3: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 2: Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain 4: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 1: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 2: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 3: Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain 4: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 4: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 1: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 1: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 2: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 2: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 3: Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain 3: Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain 4: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 1: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 2: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 3: Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain 4: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 1: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 2: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 3: Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain 4: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 1: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 2: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 3: Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain 4: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 1: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 2: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 3: Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain 4: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 26862.3 seconds (Warm-up)
+Chain 4:                23356.9 seconds (Sampling)
+Chain 4:                50219.2 seconds (Total)
+Chain 4: 
+Chain 1: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 27213.3 seconds (Warm-up)
+Chain 1:                23686.5 seconds (Sampling)
+Chain 1:                50899.8 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 27961.9 seconds (Warm-up)
+Chain 2:                23312.6 seconds (Sampling)
+Chain 2:                51274.5 seconds (Total)
+Chain 2: 
+Chain 3: Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain 3: 
+Chain 3:  Elapsed Time: 28157.6 seconds (Warm-up)
+Chain 3:                23390.5 seconds (Sampling)
+Chain 3:                51548.1 seconds (Total)
+Chain 3: 
+Model summary: model3 - phy + spa Family: bernoulli 
+  Links: mu = logit 
+Formula: Nominal_case ~ 1 + (1 | gr(Glottocode2, cov = spatial_covar_mat_local)) + (1 | gr(Glottocode, cov = A)) 
+   Data: grambank_phylopath_compl (Number of observations: 1705) 
+  Draws: 4 chains, each with iter = 7000; warmup = 3500; thin = 1;
+         total post-warmup draws = 14000
+
+Group-Level Effects: 
+~Glottocode (Number of levels: 1705) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.85      0.14     0.61     1.15 1.00     1537     3125
+
+~Glottocode2 (Number of levels: 1705) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     0.50      0.41     0.01     1.42 1.00      700     1373
+
+Population-Level Effects: 
+          Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept    -1.05      1.73    -4.67     2.29 1.00     2963     4239
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
