@@ -5,6 +5,7 @@
 .Ruserdata
 
 #non default
+GB_wide_strict.tsv
 *.Rproj
 *.pptx
 *.doc
