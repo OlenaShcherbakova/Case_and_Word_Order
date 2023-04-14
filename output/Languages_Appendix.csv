@@ -17,7 +17,7 @@
 "Modern Greek","mode1248","indo1319","Europe","1","0","1",38.36,23.13
 "Moksha","moks1248","ural1272","Inner Asia","1","0","1",54.1855,42.6728
 "Mwotlap","motl1237","aust1307","Oceania","0","0","0",-13.655015,167.706277
-"Nanai","nana1257","tung1282","N Coast Asia","1","1","1",48.4343,134.797
+"Nanai","nana1257","tung1282","N Coast Asia","1","1","1",48.43426,134.79726
 "Nen","nenn1238","more1255","S New Guinea","1","1","1",-8.62183,142.032
 "Nocte Naga","noct1238","sino1245","Southeast Asia","0","1","1",27.152,95.3903
 "Turkish","nucl1301","turk1311","Greater Mesopotamia","1","1","0",39.8667,32.8667
@@ -50,13 +50,13 @@
 "Mawng","maun1240","iwai1246","N Australia","0","0","1",-11.66,133.376
 "Nganasan","ngan1291","ural1272","Inner Asia","1","1","1",73.1354,86.2106
 "Northern Qiandong Miao","nort2747","hmon1336","Southeast Asia","0","0","0",26.6338,108.162
-"North Slavey","nort2942","atha1245","E North America","0","1","0",63.2671,-123.641
+"North Slavey","nort2942","atha1245","E North America","0","1","0",63.5,-125.67
 "Marind","nucl1622","anim1240","S New Guinea","0","1","1",-8.15651,140.009
 "Pa-Hng","pahn1237","hmon1336","Southeast Asia","0","0","1",22.8049,105.165
 "Pela","pela1242","sino1245","Southeast Asia","0","1","1",24.2142,97.9183
 "South Slavey","sout2959","atha1245","E North America","0","1","0",59.8794,-117.047
 "Tibetan","tibe1272","sino1245","Indic","1","1","1",28.3681,90.1872
-"Udihe","udih1248","tung1282","N Coast Asia","1","1","1",46.6309,135.678
+"Udihe","udih1248","tung1282","N Coast Asia","1","1","1",46.63086,135.67762
 "Vurës","vure1239","aust1307","Oceania","0","0","0",-13.905677,167.451412
 "Yami","yami1254","aust1307","Oceania","1","0","1",22.055,121.544
 "Araona","arao1248","pano1259","NE South America","1","1","1",-12.4242,-67.7293
@@ -65,7 +65,7 @@
 "Paluai","balu1257","aust1307","N Coast New Guinea","0","0","0",-2.5604,147.282
 "Bola","bola1250","aust1307","N Coast New Guinea","0","0","0",-5.55792,150.095
 "Chipewyan","chip1261","atha1245","E North America","0","1","0",58.98,-104.44
-"Chuvash","chuv1255","turk1311","Inner Asia","1","1","0",55.487,47.163
+"Chuvash","chuv1255","turk1311","Inner Asia","1","1","0",55.48701,47.16298
 "Dzao Min","dzao1238","hmon1336","Southeast Asia","0","0","1",24.9754,112.326
 "Emai-Iuleha-Ora","emai1241","atla1278","African Savannah","0","0","0",7.09089,5.84494
 "Enu","enuu1235","sino1245","Southeast Asia","0","1","0",22.95,101.85
@@ -187,9 +187,9 @@
 "Selkup","selk1253","ural1272","Inner Asia","1","1","1",59.9409,82.3004
 "Standard Malay","stan1306","aust1307","Southeast Asia","0","0","0",3.08896,101.699
 "Ternate","tern1247","nort2923","Oceania","0","0","0",0.80562,127.333
-"Toba-Maskoy","toba1268","leng1261","SE South America","0","0","1",-21.5474,-58.0158
+"Toba-Enenlhet","toba1268","leng1261","SE South America","0","0","1",-21.5474,-58.0158
 "Western Lawa","west2396","aust1305","Southeast Asia","0","0","0",19.8678,99.2057
-"Sakha","yaku1245","turk1311","Inner Asia","1","1","0",61.6974,133.98
+"Sakha","yaku1245","turk1311","Inner Asia","1","1","0",61.69744,133.98031
 "Biao Mon","biao1256","hmon1336","Southeast Asia","0","0","1",24.6451,113.469
 "Breton","bret1244","indo1319","Europe","0","0","1",48.2452,-3.78934
 "Degema","dege1246","atla1278","African Savannah","0","0","0",4.73373,6.80991
@@ -223,7 +223,7 @@
 "Chak","chak1270","sino1245","Indic","1","1","0",21.4134,92.5953
 "Chamorro","cham1312","aust1307","Oceania","0","0","1",13.438011,144.74474
 "Cocama-Cocamilla","coca1259","tupi1275","NE South America","0","0","0",-4.5,-74
-"Gagauz","gaga1249","turk1311","Inner Asia","1","0","1",44.5988,28.0277
+"Gagauz","gaga1249","turk1311","Inner Asia","1","0","1",44.59876,28.02769
 "Gheg Albanian","gheg1238","indo1319","Europe","1","0","0",42.317,21.3837
 "Iban","iban1264","aust1307","Southeast Asia","0","0","0",2.09041,112.934
 "Itzá","itza1241","maya1287","Mesoamerica","0","0","0",17.0269,-89.8734
@@ -240,7 +240,7 @@
 "Ngalkbun","ngal1292","gunw1250","N Australia","1","1","1",-13.9783,133.936
 "Nivaclé","niva1238","mata1289","SE South America","0","0","0",-22.8557,-61.7606
 "Noon","noon1242","atla1278","African Savannah","0","0","0",14.792,-16.9205
-"North Azerbaijani","nort2697","turk1311","Greater Mesopotamia","1","1","0",40.9777,46.4737
+"North Azerbaijani","nort2697","turk1311","Greater Mesopotamia","1","1","0",40.97768,46.4737
 "Eastern Armenian","nucl1235","indo1319","Greater Mesopotamia","1","0","1",40,45
 "Igbo","nucl1417","atla1278","African Savannah","0","0","0",4.62705,7.23441
 "Pacoh","paco1243","aust1305","Southeast Asia","0","0","1",16.3353,107.094
@@ -315,10 +315,10 @@
 "Min Nan Chinese","minn1241","sino1245","Southeast Asia","0","0","0",24.5,118.17
 "Creek","cree1270","musk1252","E North America","1","1","0",31,-87.5
 "Dhimal","dhim1246","sino1245","Indic","0","1","0",26.6283,88.3798
-"Halh Mongolian","halh1238","mong1349","Inner Asia","1","1","0",48.324,106.289
+"Halh Mongolian","halh1238","mong1349","Inner Asia","1","1","0",48.32397,106.28874
 "Idi-Taeme","idii1243","paho1240","S New Guinea","1","1","1",-8.75976,142.301
 "Japhug","japh1234","sino1245","Southeast Asia","0","1","1",32.1,102.36
-"Korean","kore1280","kore1284","N Coast Asia","1","1","1",37.5,128
+"Korean","kore1280","kore1284","N Coast Asia","1","1","1",37.54,126.98
 "Naman","litz1237","aust1307","Oceania","0","0","0",-16.1331,167.415
 "Loniu","loni1238","aust1307","N Coast New Guinea","0","0","0",-2.06124,147.35
 "Luo (Kenya and Tanzania)","luok1236","nilo1247","S Africa","0","0","1",-0.93296,34.4896
@@ -466,9 +466,9 @@
 "Seri","seri1257",NA,"Mesoamerica","0","1","0",28.9877,-112.384
 "Soga","soga1242","atla1278","S Africa","0","0","1",0.40456,33.3942
 "Sonsorol","sons1242","aust1307","Oceania","0","0","1",5.328596,132.221282
-"Turkmen","turk1304","turk1311","Greater Mesopotamia","1","1","0",37.0872,59.1757
+"Turkmen","turk1304","turk1311","Greater Mesopotamia","1","1","0",37.08719,59.17574
 "Western Xiangxi Miao","west2430","hmon1336","Southeast Asia","0","0","0",28.33,109.67
-"Yau (Morobe Province)","yaum1237","nucl1709","N Coast New Guinea","1","1","1",-6.08274,146.841
+"Yau-Nungon","yaum1237","nucl1709","N Coast New Guinea","1","1","1",-6.08274,146.841
 "Mungbam","abar1238","atla1278","African Savannah","0","0","0",6.5805,10.2267
 "Aneityum","anei1239","aust1307","Oceania","1","0","0",-20.1864,169.825
 "Angami Naga","anga1288","sino1245","Southeast Asia","1","1","0",25.6841,93.8668
@@ -515,7 +515,7 @@
 "Huichol","huic1243","utoa1244","Mesoamerica","0","1","0",21.954,-104.062
 "Iduna","idun1242","aust1307","S New Guinea","0","1","1",-9.34361,150.24
 "Mam","mamm1241","maya1287","Mesoamerica","0","0","0",14.8034,-91.7231
-"Mi'kmaq","mikm1235","algi1248","E North America","1","0","1",45.9941,-65.5766
+"Mi'kmaq","mikm1235","algi1248","E North America","1","0","1",46,-64
 "Mosetén-Chimané","mose1249",NA,"NE South America","0","0","1",-14.64448,-67.83756
 "Kathmandu Valley Newari","newa1246","sino1245","Indic","1","1","0",27.67,85.326
 "Nopala Chatino","nopa1235","otom1299","Mesoamerica","1","0","1",16.0954,-97.1339
@@ -563,7 +563,7 @@
 "Fulniô","fuln1247",NA,"NE South America","0","1","0",-9.02591,-37.1402
 "Guiqiong","guiq1238","sino1245","Southeast Asia","1","1","0",30.4803,102.128
 "Gunya","guny1241","pama1250","S Australia","1","0","0",-27.0642,145.862
-"Hidatsa","hida1246","siou1252","Basin and Plains","1","1","0",47.7534,-102.528
+"Hidatsa","hida1246","siou1252","Basin and Plains","1","1","0",47.33,-102
 "Hõne","hone1235","atla1278","African Savannah","0","0","0",9.79715,10.9206
 "Ibanag","iban1267","aust1307","Oceania","0","0","0",17.4201,121.891
 "Kara (Papua New Guinea)","kara1486","aust1307","N Coast New Guinea","0","0","0",-2.81957,151.111
@@ -609,7 +609,7 @@
 "Q'anjob'al","qanj1241","maya1287","Mesoamerica","0","0","0",15.6846,-91.3043
 "Sarsi","sars1236","atha1245","Basin and Plains","0","1","0",50.8822,-114.301
 "Sô","sooo1254","aust1305","Southeast Asia","0","0","0",16.9081,105.001
-"Southern Pashto","sout2649","indo1319","Indic","1","1","0",37.17,68.25
+"Southern Pashto","sout2649","indo1319","Greater Mesopotamia","1","1","0",31.5,65.7
 "Tabaru","taba1263","nort2923","Oceania","0","1","0",1.46563,127.633
 "Tahaggart Tamahaq","taha1241","afro1255","N Africa","1","0","0",22.5908,8.73169
 "Upper Necaxa Totonac","uppe1275","toto1251","Mesoamerica","0","0","0",20.236,-97.81
@@ -633,7 +633,7 @@
 "Murle","murl1244","surm1244","African Savannah","1","0","1",6.69756,33.988
 "Kwomtari","nucl1593","kwom1263","N Coast New Guinea","0","1","0",-3.50718,141.488
 "Seke (Vanuatu)","seke1241","aust1307","Oceania","0","0","0",-15.8839,168.197
-"Shor","shor1247","turk1311","Inner Asia","1","1","0",52.3261,88.4344
+"Shor","shor1247","turk1311","Inner Asia","1","1","0",52.32607,88.4344
 "Sio","sioo1240","aust1307","N Coast New Guinea","0","0","0",-5.96037,147.353
 "Thulung","thul1246","sino1245","Indic","1","1","0",27.5389,87.6063
 "Tukang Besi North","tuka1248","aust1307","Oceania","0","0","1",-5.30994,123.578
@@ -728,7 +728,7 @@
 "Yecuatla Totonac","yecu1235","toto1251","Mesoamerica","0","0","1",20.1765,-96.8741
 "Baraamu","bara1357","sino1245","Indic","1","1","0",28.3768,85.0584
 "Bhojpuri","bhoj1244","indo1319","Indic","1","1","1",26.458455,84.817115
-"Bonan","bona1250","mong1349","Inner Asia","1","1","1",35.6972,102.995
+"Bonan","bona1250","mong1349","Inner Asia","1","1","1",35.515,102.01778
 "Capanahua","capa1241","pano1259","NE South America","1","1","1",-6.63254,-74.3813
 "Chippewa","chip1241","algi1248","E North America","0","0","1",47.347,-94.2738
 "Chuj","chuj1250","maya1287","Mesoamerica","0","0","0",15.8399,-91.76
@@ -748,7 +748,7 @@
 "Shanenawa","shan1283","pano1259","NE South America","1","1","0",-8.00919,-73.3264
 "Tigak","tiga1245","aust1307","N Coast New Guinea","0","0","0",-2.70951,150.893
 "Tshangla","tsha1245","sino1245","Indic","1","1","1",27.3694,91.7741
-"Turkic Khalaj","turk1303","turk1311","Greater Mesopotamia","1","0","0",34.4224,50.3222
+"Turkic Khalaj","turk1303","turk1311","Greater Mesopotamia","1","0","0",34.42237,50.32223
 "Ukrainian","ukra1253","indo1319","Inner Asia","1","0","1",49.796,29.945
 "Zayse-Zergulla","zays1235","gong1255","Greater Abyssinia","1","1","0",5.83747,37.3409
 "Abu' Arapesh","abua1245","nucl1708","N Coast New Guinea","0","0","0",-3.461612,142.917031
@@ -765,7 +765,7 @@
 "Itonama","iton1250",NA,"NE South America","0","0","1",-12.80431,-64.35748
 "Madi","jama1261","araw1282","NE South America","0","1","1",-7.62223,-66.5662
 "Keley-i Kallahan","kele1259","aust1307","Oceania","0","0","0",16.7099,121.035
-"Khakas","khak1248","turk1311","Inner Asia","1","1","0",50.7393,107.169
+"Khakas","khak1248","turk1311","Inner Asia","1","1","0",50.73933,107.16939
 "Kol (Cameroon)","kolc1235","atla1278","African Savannah","0","0","0",3.65994,12.8574
 "Mixtepec Zapotec","mixt1426","otom1299","Mesoamerica","0","0","0",16.1724,-96.2372
 "Mumuye","nucl1240","atla1278","African Savannah","0","0","0",8.90347,11.71545
@@ -911,7 +911,7 @@
 "Dupaninan Agta","dupa1235","aust1307","Oceania","1","0","0",17.3748,122.188
 "Eastern Highland Otomi","east2556","otom1299","Mesoamerica","0","0","1",20.5991,-98.0978
 "Emberá-Catío","embe1260","choc1280","Andean","1","1","0",7.52721,-76.7476
-"Finallig","fina1242","aust1307","Oceania","1","0","0",17.0319,121.11
+"Eastern-Southern Bontok","fina1242","aust1307","Oceania","1","0","0",17.0319,121.11
 "Gants","gant1244","nucl1709","Interior New Guinea","0","1","0",-5.28113,144.771
 "Garo","garo1247","sino1245","Indic","1","1","0",25.2954,90.462
 "East Taa","huaa1248","tuuu1241","S Africa","0","0","0",-24.20022,20.79583
@@ -926,11 +926,11 @@
 "Nihali","niha1238",NA,"Indic","1","1","1",21.1886,76.3318
 "Qawasqar","qawa1238","kawe1237","SE South America","0","1","0",-49.303195,-74.707536
 "Salka-Tsishingini","tsis1238","atla1278","African Savannah","0","0","0",10.2882,5.11073
-"Ulch","ulch1241","tung1282","N Coast Asia","1","1","1",51.8521,140.29
+"Ulch","ulch1241","tung1282","N Coast Asia","1","1","1",51.85209,140.29045
 "Wardaman","ward1246","yang1287","N Australia","1","0","1",-15.4155,132.604
 "Western Apache","west2615","atha1245","Basin and Plains","0","1","1",33.8574,-110.123
 "Wuding-Luquan Yi","wudi1238","sino1245","Southeast Asia","1","0","0",25.48,102.48
-"Yonaguni","yona1241","japo1237","Oceania","1","1","1",24.45,122.991
+"Yonaguni","yona1241","japo1237","Oceania","1","1","1",24.44997,122.99075
 "Zacatlán-Ahuacatlán-Tepetzintla Nahuatl","zaca1241","utoa1244","Mesoamerica","0","0","0",20.0581,-97.8974
 "Ama (Papua New Guinea)","amap1240","left1242","N Coast New Guinea","0","1","1",-4.20192,141.658
 "Ongota","bira1253",NA,"Greater Abyssinia","0","1","0",5.29807,37.025
@@ -960,7 +960,7 @@
 "Awad Bing","awad1244","aust1307","N Coast New Guinea","0","1","0",-5.59896,146.355
 "Border Kuna","bord1248","chib1249","Andean","0","1","0",7.92993,-77.1664
 "Central Bai","cent2004","sino1245","Southeast Asia","0","0","0",26.1666,99.7052
-"Indonesian","indo1316","aust1307","Southeast Asia","0","0","0",-7.33458,109.716
+"Standard Indonesian","indo1316","aust1307","Southeast Asia","0","0","0",-7.33458,109.716
 "Ewe","ewee1241","atla1278","African Savannah","0","0","0",6.46061,0.814975
 "Hixkaryána","hixk1239","cari1283","NE South America","0","0","0",-0.16265,-58.80153
 "Hote","hote1245","aust1307","Interior New Guinea","0","0","0",-7.07708,146.869
@@ -1021,9 +1021,9 @@
 "Mara Chin","mara1382","sino1245","Indic","1","1","1",22.1138,93.0387
 "Minica Huitoto","mini1256","huit1251","NE South America","1","1","0",-1.54535,-73.1107
 "Motu","motu1246","aust1307","S New Guinea","0","1","1",-9.67492,147.424
-"Negidal","negi1245","tung1282","N Coast Asia","1","1","1",52.9658,139.206
+"Negidal","negi1245","tung1282","N Coast Asia","1","1","1",52.96584,139.20575
 "Nsenga","nsen1242","atla1278","S Africa","0","0","1",-15.3946,31.3544
-"N||ng-Danster !Ui","nuuu1241","tuuu1241","S Africa","0","0","0",-29.7054,19.0841
+"Ghaap-Kalahari","nuuu1241","tuuu1241","S Africa","0","0","0",-29.7054,19.0841
 "Nyam","nyam1285","afro1255","African Savannah","0","0","0",9.18024,10.83652
 "Ofayé","ofay1240","nucl1710","NE South America","0","1","0",-22.278,-53.7227
 "Orowe","orow1242","aust1307","Oceania","0","0","0",-21.6269,165.473
@@ -1143,7 +1143,7 @@
 "South-Central Koongo","koon1244","atla1278","S Africa","0","0","0",-5.57722,14.4771
 "Kuman","kuma1280","nucl1709","Interior New Guinea","0","1","1",-5.90586,144.977
 "Lega-Shabunda","lega1249","atla1278","S Africa","0","0","0",-3.83196,27.1424
-"Colloquial Malay","mala1479","aust1307","Southeast Asia","0","0","0",1.85856,103
+"Central Malay","mala1479","aust1307","Southeast Asia","0","0","0",1.85856,103
 "Mayangna","maya1285","misu1242","Mesoamerica","0","1","0",14.1259,-84.3439
 "Northern Puebla Nahuatl","nort2957","utoa1244","Mesoamerica","0","0","0",20.1356,-97.9814
 "Nyakyusa-Ngonde","nyak1260","atla1278","S Africa","0","0","1",-9.71018,33.7763
@@ -1226,7 +1226,7 @@
 "Eastern Penan","east2485","aust1307","Southeast Asia","0","0","1",4.5915,114.584
 "Eastern Egyptian Bedawi Arabic","east2690","afro1255","Greater Mesopotamia","0","0","1",29.6742,33.6113
 "Kanakanavu","kana1286","aust1307","Oceania","0","1","0",23.3235,120.887
-"Mikasuki","mika1239","musk1252","E North America","1","1","1",26.08142,-80.90847
+"Mikasuki","mika1239","musk1252","E North America","1","1","1",31.5,-84
 "Ngbaka Ma'bo","ngba1284","atla1278","S Africa","0","0","0",4,18.12
 "Notsi","nots1237","aust1307","N Coast New Guinea","0","0","0",-3.0557,151.661
 "Peere","peer1241","atla1278","African Savannah","0","0","0",7.82186,12.2518
@@ -1303,7 +1303,7 @@
 "Yaka (Central African Republic)","yaka1272","atla1278","S Africa","0","0","0",3.6515,17.2713
 "Cabécar","cabe1245","chib1249","Mesoamerica","1","1","0",9.67031,-83.4102
 "Cheyenne","chey1247","algi1248","Basin and Plains","0","0","1",45.5321,-106.659
-"Cori","cori1240","atla1278","African Savannah","0","0","0",9.59,8.06
+"Kyoli","cori1240","atla1278","African Savannah","0","0","0",9.59,8.06
 "Jeh","jehh1245","aust1305","Southeast Asia","0","0","1",15.2351,107.753
 "Lamboya","lamb1273","aust1307","Oceania","0","0","1",-9.70434,119.344
 "Mouk-Aria","mouk1239","aust1307","N Coast New Guinea","0","0","0",-5.71155,149.158
@@ -1314,7 +1314,7 @@
 "Awtuw","awtu1239","sepi1257","N Coast New Guinea","1","1","1",-3.53129,141.928
 "Babatana","baba1268","aust1307","Oceania","0","0","0",-7.22281,157.149
 "Kanyaki-Kagbaaga-Kajoko Bidyogo","bidy1244","atla1278","African Savannah","0","0","0",11.1097,-16.1497
-"Central Dusun","cent2100","aust1307","Southeast Asia","0","0","0",6.02998,116.681
+"Kadazan Dusun","cent2100","aust1307","Southeast Asia","0","0","0",6.02998,116.681
 "Kaki Ae","kaki1249",NA,"S New Guinea","1","1","0",-7.9946,145.816
 "Baka (South Sudan)","baka1274","cent2225","African Savannah","0","0","0",4.65943,29.59
 "Biatah Bidayuh","biat1246","aust1307","Southeast Asia","0","0","1",1.17596,110.254
