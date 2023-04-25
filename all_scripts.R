@@ -13,6 +13,7 @@ source("plot_heatmap.R")
 source("plot_mirror_trees_IE.R")
 source("plot_mirror_trees_UA.R")
 source("plot_mirror_trees_ST.R")
+source("plot_families_overview.R")
 
 #measure phylogenetic signal of three binary grammatical features
 source("measuring_phylosignal.R")
@@ -36,5 +37,6 @@ source("brms_kfold_FWO.R")
 #generating the table of outputs from these scripts:
 source("brms_models_comparison_tables_summary.R")
 
-
+#counting the number of languages in the same that have at least one of the two strategies (case and fixed/rigid word order)
+source("count_of_morphosyntax.R")
 
