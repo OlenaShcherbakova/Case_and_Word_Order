@@ -13,5 +13,6 @@ GB_wide_strict.tsv
 *.pdf
 *.svg
 *.png
+*.jpg
 
 *grambank-analysed*
