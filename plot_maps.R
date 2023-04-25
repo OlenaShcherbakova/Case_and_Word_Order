@@ -63,11 +63,11 @@ combination_new <- combination %>%
   mutate(
     NC_FWO_details = case_when(
       Nominal_case == "1" &
-        Free_word_order == "1" ~ "Case + Free word order",
+        Free_word_order == "1" ~ "Case + Flexible",
       Nominal_case == "1" & Free_word_order == "0" ~ "Case",
       Nominal_case == "0" & Free_word_order == "0" ~ "None",
       Nominal_case == "0" &
-        Free_word_order == "1" ~ "Free word order"
+        Free_word_order == "1" ~ "Flexible"
     )
   ) %>%
   mutate(NC_FWO_details = as.factor(NC_FWO_details)) %>%
@@ -78,7 +78,7 @@ combination_new <- combination %>%
   )) %>%
   mutate(NC_FWO_details = factor(
     NC_FWO_details,
-    levels = c("Case", "Free word order", "Case + Free word order", "None")
+    levels = c("Case", "Flexible", "Case + Flexible", "None")
   ))
 
 
@@ -156,8 +156,8 @@ m2 <- basemap + geom_point(
 m2 <- m2 + scale_color_manual(
   values = c(
     "Case" = "#DCE319FF",
-    "Free word order" = "#404688FF",
-    "Case + Free word order" = "#31B57BFF",
+    "Flexible" = "#404688FF",
+    "Case + Flexible" = "#31B57BFF",
     "None" = "gray50"
   )
 ) +
@@ -182,11 +182,44 @@ ggsave(
   file = "output/maps_both.svg",
   plot = two_maps,
   width = 10,
-  height = 12
+  height = 12,
+  dpi = 300
 )
+# ggsave(
+#   file = "output/maps_both_big.svg",
+#   plot = two_maps,
+#   width = 8,
+#   height = 12,
+#   dpi = 300
+# )
+
 ggsave(
-  file = "output/maps_both_big.svg",
+  file = "output/maps_both.jpg",
   plot = two_maps,
-  width = 8,
-  height = 12
+  width = 10,
+  height = 12,
+  dpi = 300
 )
+# ggsave(
+#   file = "output/maps_both_big.jpg",
+#   plot = two_maps,
+#   width = 8,
+#   height = 12,
+#   dpi = 300
+# )
+
+ggsave(
+  file = "output/maps_both.pdf",
+  plot = two_maps,
+  width = 10,
+  height = 12,
+  dpi = 300
+)
+# ggsave(
+#   file = "output/maps_both_big.pdf",
+#   plot = two_maps,
+#   width = 8,
+#   height = 12,
+#   dpi = 300
+# )
+
