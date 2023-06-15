@@ -19,13 +19,13 @@ tree$tip.label[match(grambank_phylopath_compl$Glottocode, tree$tip.label)] <-
 stopifnot(all(tree$tip.label %in% grambank_phylopath_compl$Name))
 
 grambank_phylopath_compl <- grambank_phylopath_compl %>%
-  mutate(Nominal_case_labelled = recode(Nominal_case,
+  mutate(Nominal_case_labelled = dplyr::recode(Nominal_case,
                                         "1" = "present",
                                         "0" = "absent")) %>%
-  mutate(Verb_final_labelled = recode(Verb_final,
+  mutate(Verb_final_labelled = dplyr::recode(Verb_final,
                                       "1" = "present",
                                       "0" = "absent")) %>%
-  mutate(Free_word_order_labelled = recode(Free_word_order,
+  mutate(Free_word_order_labelled = dplyr::recode(Free_word_order,
                                            "1" = "present",
                                            "0" = "absent"))
 
@@ -55,11 +55,11 @@ tree2 <-
   full_join(tree, data.frame(label = names(Trait_1), stat = Trait_1), 
             by = 'label')
 p <-
-  ggtree(tree2) + geom_tiplab(hjust = 0.5,
+  ggtree(tree2, size=0.8) + geom_tiplab(hjust = 0.5,
                               offset = 3.2,
                               size = 8) + #offset = lengths_vector) +
   geom_tippoint(aes(color = stat), size = 7) +
-  scale_color_manual("Nominal case", values = cols) +
+  scale_color_manual("Case", values = cols) +
   theme(
     legend.position = "top",
     legend.justification = "left",
@@ -84,7 +84,7 @@ pies <- lapply(pies, function(g)
 tree2 <-
   full_join(tree, data.frame(label = names(Trait_2), stat = Trait_2), by = 'label')
 p <-
-  ggtree(tree2) + #geom_tiplab(hjust = 0.5, offset=0.7) + #offset = lengths_vector) +
+  ggtree(tree2, size=0.8) + #geom_tiplab(hjust = 0.5, offset=0.7) + #offset = lengths_vector) +
   geom_tippoint(aes(color = stat), size = 7) +
   scale_color_manual("Verb-final word order", values = cols) +
   theme(
@@ -116,9 +116,9 @@ pies <- lapply(pies, function(g)
 tree2 <-
   full_join(tree, data.frame(label = names(Trait_3), stat = Trait_3), by = 'label')
 p <-
-  ggtree(tree2) + #geom_tiplab(hjust = 0.5, offset=0.7) + #offset = lengths_vector) +
+  ggtree(tree2, size=0.8) + #geom_tiplab(hjust = 0.5, offset=0.7) + #offset = lengths_vector) +
   geom_tippoint(aes(color = stat), size = 7) +
-  scale_color_manual("Free word order", values = cols) +
+  scale_color_manual("Flexible word order", values = cols) +
   theme(
     legend.position = "top",
     legend.direction = "vertical",
@@ -144,5 +144,30 @@ ggsave(
   file = "output/plot_UA_mirror_trees.svg",
   plot = try,
   width = 20,
-  height = 40
+  height = 40,
+  dpi = 300
 )
+
+ggsave(
+  file = "output/plot_UA_mirror_trees.jpg",
+  plot = try,
+  width = 20,
+  height = 40,
+  dpi = 300
+)
+
+ggsave(
+  file = "output/plot_UA_mirror_trees.pdf",
+  plot = try,
+  width = 20,
+  height = 40,
+  dpi = 300
+)
+
+# ggsave(
+#   file = "output/plot_UA_mirror_trees.jpg",
+#   plot = try,
+#   width = 8,
+#   height = 16,
+#   dpi = 300
+# )
