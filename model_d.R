@@ -1,0 +1,91 @@
+source('library.R')
+
+set.seed(123)
+
+grambank_phylopath_compl <- load_data_NAs() %>%
+  left_join(read_tsv("data/glottolog_AUTOTYPE_areas.tsv"))
+
+tree <- read.tree("data/wrangled.tree")
+
+grambank_phylopath_compl <-
+  grambank_phylopath_compl[grambank_phylopath_compl$Glottocode %in% tree$tip.label, ]
+tree <- keep.tip(tree, grambank_phylopath_compl$Glottocode)
+
+
+# make sure we have a complete match between the tree and the data
+stopifnot(all(tree$tip.label %in% grambank_phylopath_compl$Glottocode))
+
+
+grambank_phylopath_compl <- grambank_phylopath_compl %>%
+  mutate(Glottocode2 = Glottocode) %>%
+  mutate(Glottocode3 = Glottocode2) %>%
+  remove_rownames() %>%
+  column_to_rownames(var = "Glottocode3") %>%
+  as.data.frame()
+
+#rownames(grambank_phylopath_compl) <- grambank_phylopath_compl$taxon
+
+assert_that(all(tree$tip.label %in% grambank_phylopath_compl$Glottocode),
+            msg = "The data and phylogeny taxa do not match")
+
+A <- ape::vcv.phylo(tree)
+#A <- A / max(A)
+
+grambank_phylopath_compl = grambank_phylopath_compl[order(match(grambank_phylopath_compl$Glottocode, rownames(A))),]
+
+kappa = 1
+phi_1 = c(1, 1.25) # "Local" version: (sigma, phi) First value is not used
+
+spatial_covar_mat_local = varcov.spatial(grambank_phylopath_compl[, c("Longitude", "Latitude")],
+                                         cov.pars = phi_1,
+                                         kappa = kappa)
+
+spatial_covar_mat_local <- spatial_covar_mat_local$varcov
+
+dimnames(spatial_covar_mat_local) = list(grambank_phylopath_compl$Glottocode2,
+                                         grambank_phylopath_compl$Glottocode2)
+spatial_covar_mat_local <-
+  spatial_covar_mat_local / max(spatial_covar_mat_local)
+
+stopifnot(all(rownames(A) == rownames(spatial_covar_mat_local)))
+
+#setting the same weakly informative prior for all fixed effects
+weakly_informative <- c(
+  set_prior("exponential(4)", class = "sd", resp="Verbfinal"),
+  set_prior("exponential(4)", class = "sd", resp="Nominalcase"),
+  set_prior("student_t(3, 0, 2.5)", class = "b", resp="Verbfinal"),
+  set_prior("student_t(3, 0, 2.5)", class = "b", resp="Nominalcase"),
+  set_prior("student_t(3, 0, 2.5)", class = "Intercept", resp="Verbfinal"),
+  set_prior("student_t(3, 0, 2.5)", class = "Intercept", resp="Nominalcase")
+)
+
+vf <-  brms::bf(Verb_final ~ 1 + Nominal_case +
+                   (1 | gr(Glottocode, cov = A)))
+
+nc <- brms::bf(Nominal_case ~ 1 + Free_word_order +
+                 (1 | gr(Glottocode, cov = A)))
+
+#model c where Free_word_order is predicted by Nominal_case and phylogenetic effects
+model_d <- brm(
+  data = grambank_phylopath_compl,
+  data2 = list(A = A),
+  family = "bernoulli",
+  
+  vf + nc + set_rescor(FALSE),
+  
+  prior = weakly_informative,
+  control = list(adapt_delta = 0.95),
+  #default adapt_delta=0.8
+  iter = 4000,
+  cores = 4,
+  sample_prior = TRUE,
+  save_pars = save_pars(all = TRUE),
+  seed = 12345
+)
+
+cat(
+  "Model summary: model_d - 1) Nominal_case ~ Free_word_order + phy, 2) Verb_final ~ Nominal_case + phy"
+)
+summary(model_d)
+
+save(model_d, file = "output_models/model_d.RData")
