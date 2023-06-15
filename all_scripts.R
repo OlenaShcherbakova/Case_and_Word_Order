@@ -43,8 +43,8 @@ source("model_b.R")
 source("model_c.R")
 source("model_d.R")
 
-#extracting and standardizing correlation coefficients from these brms models
-source("")
+#extracting correlation coefficients from these brms models
+source("brms_coefficients_extraction.R")
 
 #counting the number of languages in the same that have at least one of the two strategies (case and fixed/rigid word order)
 source("count_of_morphosyntax.R")
