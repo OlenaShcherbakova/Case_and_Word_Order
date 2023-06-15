@@ -36,11 +36,11 @@ kfold_comparison <-
 
 save(kfold_comparison, file = "output_models/kfold_comparison_Vf.RData")
 
-cat("comparisons of models based on kfold")
-kfold_comparison
-
-cat("output structure")
-str(kfold_comparison)
+# cat("comparisons of models based on kfold")
+# kfold_comparison
+# 
+# cat("output structure")
+# str(kfold_comparison)
 
 filepath_kfold_comparison <-
   paste0("output_tables/", "kfold_comparison_Vf", ".csv", collapse = "")
