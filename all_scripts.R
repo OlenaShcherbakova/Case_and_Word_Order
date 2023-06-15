@@ -37,6 +37,15 @@ source("brms_kfold_FWO.R")
 #generating the table of outputs from these scripts:
 source("brms_models_comparison_tables_summary.R")
 
+#fitting best-supported models according to Phylogenetic Path analysis in brms package
+#which allows to incorporate the random effect of spatial proximity on Flexible word order (FWO) variable
+source("model_b.R")
+source("model_c.R")
+source("model_d.R")
+
+#extracting and standardizing correlation coefficients from these brms models
+source("")
+
 #counting the number of languages in the same that have at least one of the two strategies (case and fixed/rigid word order)
 source("count_of_morphosyntax.R")
 
