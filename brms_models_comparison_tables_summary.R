@@ -27,21 +27,21 @@ comparison_NC <- as.data.frame(rbind(loo, loo_mm, kfold)) %>%
   relocate(`Response variable`, .after = "Model")
 
 #Vf model comparison
-loo <- read.csv("output_tables/loo_comparison.csv") %>%
+loo <- read.csv("output_tables/loo_comparison_Vf.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "LOO-CV") %>%
   mutate_if(is.numeric, round, digits=2) %>%
   relocate(`Cross-validation type`, .after=se_diff) %>%
   dplyr::select(1:4)
 
-loo_mm <- read.csv("output_tables/loo_comparison_mm.csv") %>%
+loo_mm <- read.csv("output_tables/loo_comparison_mm_Vf.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "LOO with moment matching") %>%
   mutate_if(is.numeric, round, digits=2) %>%
   relocate(`Cross-validation type`, .after=se_diff) %>%
   dplyr::select(1:4)
 
-kfold <- read.csv("output_tables/kfold_comparison.csv") %>%
+kfold <- read.csv("output_tables/kfold_comparison_Vf.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "K-fold CV") %>%
   mutate_if(is.numeric, round, digits=2) %>%
@@ -53,21 +53,21 @@ comparison_Vf <- as.data.frame(rbind(loo, loo_mm, kfold)) %>%
   relocate(`Response variable`, .after = "Model")
 
 #FWO model comparison
-loo <- read.csv("output_tables/loo_comparison.csv") %>%
+loo <- read.csv("output_tables/loo_comparison_FWO.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "LOO-CV") %>%
   mutate_if(is.numeric, round, digits=2) %>%
   relocate(`Cross-validation type`, .after=se_diff) %>%
   dplyr::select(1:4)
 
-loo_mm <- read.csv("output_tables/loo_comparison_mm.csv") %>%
+loo_mm <- read.csv("output_tables/loo_comparison_mm_FWO.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "LOO with moment matching") %>%
   mutate_if(is.numeric, round, digits=2) %>%
   relocate(`Cross-validation type`, .after=se_diff) %>%
   dplyr::select(1:4)
 
-kfold <- read.csv("output_tables/kfold_comparison.csv") %>%
+kfold <- read.csv("output_tables/kfold_comparison_FWO.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "K-fold CV") %>%
   mutate_if(is.numeric, round, digits=2) %>%
