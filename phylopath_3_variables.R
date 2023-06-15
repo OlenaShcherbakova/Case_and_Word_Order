@@ -73,21 +73,6 @@ ggsave(file="output/phylopath_nc_coef_plot_averaged.svg", plot=coef_plot, width=
 save(a_ci, file = "output_models/phylopath_CI_nc_averaged.RData")
 load('output_models/phylopath_CI_nc_averaged.RData')
 
-
-b <- best(p)
-best_model <- plot(b, manual_layout = positions, text_size = 4.5)
-ggsave(file="output/phylopath_nc_best_model.svg", plot=best_model, width=10, height=8)
-
-b_ci <- best(p, boot = 500)
-b_ci
-
-coef_plot <- coef_plot(b_ci, error_bar = "ci", order_by = "strength") + ggplot2::coord_flip()
-ggsave(file="output/phylopath_nc_coef_plot.svg", plot=coef_plot, width=10, height=8)
-
-save(b_ci, file = "output_models/phylopath_CI_nc.RData")
-load('output_models/phylopath_CI_nc.RData')
-
-
 #custom plot of model comparisons
 cut_off = 2
 
