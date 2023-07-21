@@ -360,6 +360,14 @@ ggsave(
 )
 
 ggsave(
+  file = "output/plot_heatmap.png",
+  plot = p3,
+  width = 30,
+  height = 30, 
+  dpi = 300
+)
+
+ggsave(
   file = "output/plot_heatmap.pdf",
   plot = p3,
   width = 30,
