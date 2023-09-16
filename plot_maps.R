@@ -81,7 +81,15 @@ combination_new <- combination %>%
     levels = c("Case", "Flexible", "Case + Flexible", "None")
   ))
 
+combination_new %>%
+  group_by(NC_Vf_details) %>%
+  summarize(Count = n()) %>%
+  mutate(Percentage = (Count / sum(Count)) * 100)
 
+combination_new %>%
+  group_by(NC_FWO_details) %>%
+  summarize(Count = n()) %>%
+  mutate(Percentage = (Count / sum(Count)) * 100)
 
 #Basemap
 basemap <- ggplot(combination_new) +
@@ -124,9 +132,9 @@ m1 <- basemap + geom_point(
 
 m1 <- m1 + scale_color_manual(
   values = c(
-    "Case" = "#DCE319FF",
-    "Verb-final" = "#404688FF",
-    "Case + Verb-final" = "#31B57BFF",
+    "Case" = "#DDCC77",
+    "Verb-final" = "#88CCEE",
+    "Case + Verb-final" = "#117733",
     "None" = "gray50"
   )
 ) +
@@ -139,12 +147,6 @@ m1 <- m1 + scale_color_manual(
   ) +
   guides(color = guide_legend(nrow = 2))
 
-ggsave(
-  file = "output/map_NC_Vf.svg",
-  plot = m1,
-  width = 10,
-  height = 6
-)
 
 m2 <- basemap + geom_point(
   aes(x = Longitude, y = Latitude, color = NC_FWO_details),
@@ -155,9 +157,9 @@ m2 <- basemap + geom_point(
 
 m2 <- m2 + scale_color_manual(
   values = c(
-    "Case" = "#DCE319FF",
-    "Flexible" = "#404688FF",
-    "Case + Flexible" = "#31B57BFF",
+    "Case" = "#DDCC77",
+    "Flexible" = "#88CCEE",
+    "Case + Flexible" = "#117733",
     "None" = "gray50"
   )
 ) +
@@ -170,28 +172,7 @@ m2 <- m2 + scale_color_manual(
   ) +
   guides(color = guide_legend(nrow = 2))
 
-ggsave(
-  file = "output/map_NC_FWO.svg",
-  plot = m2,
-  width = 10,
-  height = 6
-)
-
 two_maps <- m1 / m2
-ggsave(
-  file = "output/maps_both.svg",
-  plot = two_maps,
-  width = 10,
-  height = 12,
-  dpi = 300
-)
-# ggsave(
-#   file = "output/maps_both_big.svg",
-#   plot = two_maps,
-#   width = 8,
-#   height = 12,
-#   dpi = 300
-# )
 
 ggsave(
   file = "output/maps_both.jpg",
@@ -200,13 +181,6 @@ ggsave(
   height = 12,
   dpi = 300
 )
-# ggsave(
-#   file = "output/maps_both_big.jpg",
-#   plot = two_maps,
-#   width = 8,
-#   height = 12,
-#   dpi = 300
-# )
 
 ggsave(
   file = "output/maps_both.pdf",
@@ -215,11 +189,4 @@ ggsave(
   height = 12,
   dpi = 300
 )
-# ggsave(
-#   file = "output/maps_both_big.pdf",
-#   plot = two_maps,
-#   width = 8,
-#   height = 12,
-#   dpi = 300
-# )
 

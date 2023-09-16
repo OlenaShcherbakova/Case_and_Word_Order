@@ -211,9 +211,9 @@ p1 <-
   scale_fill_manual(
     "df1",
     values = c(
-      "Case" = "#DCE319FF",
-      "Verb-final" = "#404688FF",
-      "Case + Verb-final" = "#31B57BFF",
+      "Case" = "#DDCC77",
+      "Verb-final" = "#88CCEE",
+      "Case + Verb-final" = "#117733",
       "None" = "gray50"
     )
   ) +
@@ -328,9 +328,9 @@ p3 <- gheatmap(
   scale_fill_manual(
     "",
     values = c(
-      "Case" = "#DCE319FF",
-      "Word order" = "#404688FF",
-      "Case + word order" = "#31B57BFF",
+      "Case" = "#DDCC77",
+      "Word order" = "#88CCEE",
+      "Case + word order" = "#117733",
       "None" = "gray50"
     )
   ) +
@@ -342,14 +342,6 @@ p3 <- gheatmap(
   )#,
 #legend.key.size = unit(0.7, 'cm'))
 p3
-
-ggsave(
-  file = "output/plot_heatmap.svg",
-  plot = p3,
-  width = 30,
-  height = 30, 
-  dpi = 300
-)
 
 ggsave(
   file = "output/plot_heatmap.jpg",
