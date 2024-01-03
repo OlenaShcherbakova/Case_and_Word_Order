@@ -16,6 +16,7 @@ pacman::p_load(
   tidyr,
   dplyr,
   flextable,
+  fields,
   
   #brms
   brms,
