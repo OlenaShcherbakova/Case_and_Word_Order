@@ -36,9 +36,20 @@ grambank_phylopath_compl = grambank_phylopath_compl[order(match(grambank_phylopa
 kappa = 1
 phi_1 = c(1, 1.25) # "Local" version: (sigma, phi) First value is not used
 
-spatial_covar_mat_local = varcov.spatial(grambank_phylopath_compl[, c("Longitude", "Latitude")],
-                                         cov.pars = phi_1,
-                                         kappa = kappa)
+#calculate geo_dists
+lat_long_matrix <- grambank_phylopath_compl %>% 
+  #column_to_rownames("Glottocode") %>% 
+  dplyr::select(Longitude, Latitude) %>% 
+  as.matrix()
+
+rdist.earth_dists <- fields::rdist.earth(lat_long_matrix, miles = FALSE)
+
+rdist.earth_dists[upper.tri(rdist.earth_dists, diag = TRUE)] <- NA
+
+dists_vector <- as.vector(rdist.earth_dists) %>% na.omit()
+
+spatial_covar_mat_local = varcov.spatial(dists.lowertri = dists_vector, 
+                                         cov.pars = phi_1, kappa = kappa)
 
 spatial_covar_mat_local <- spatial_covar_mat_local$varcov
 
