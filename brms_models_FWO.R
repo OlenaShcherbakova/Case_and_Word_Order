@@ -73,9 +73,9 @@ model1 <- brm(
   family = "bernoulli",
   formula = Free_word_order ~ 1 + (1 | gr(Glottocode, cov = A)),
   prior = weakly_informative,
-  control = list(adapt_delta = 0.95),
+  control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 7000,
+  iter = 10000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
@@ -118,9 +118,9 @@ model2 <- brm(
   formula = Free_word_order ~ 1 + (1 |
                                   gr(Glottocode2, cov = spatial_covar_mat_local)),
   prior = weakly_informative,
-  control = list(adapt_delta = 0.95),
+  control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 7000,
+  iter = 10000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
@@ -164,9 +164,9 @@ model3 <- brm(
                                   gr(Glottocode2, cov = spatial_covar_mat_local)) +
     (1 | gr(Glottocode, cov = A)),
   prior = weakly_informative,
-  control = list(adapt_delta = 0.95),
+  control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 7000,
+  iter = 10000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),

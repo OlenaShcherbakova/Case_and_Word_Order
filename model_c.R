@@ -86,9 +86,9 @@ model_c <- brm(
   fwo + nc + set_rescor(FALSE),
   
   prior = weakly_informative,
-  control = list(adapt_delta = 0.95),
+  control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 4000,
+  iter = 7000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
