@@ -66,48 +66,48 @@ weakly_informative <- c(
   set_prior("student_t(3, 0, 2.5)", class = "Intercept")
 )
 
-#random effect of phylogenetic relationships
-model1 <- brm(
-  data = grambank_phylopath_compl,
-  data2 = list(A = A),
-  family = "bernoulli",
-  formula = Free_word_order ~ 1 + (1 | gr(Glottocode, cov = A)),
-  prior = weakly_informative,
-  control = list(adapt_delta = 0.99),
-  #default adapt_delta=0.8
-  iter = 10000,
-  cores = 4,
-  sample_prior = TRUE,
-  save_pars = save_pars(all = TRUE),
-  seed = 12345
-)
-
-cat("Model summary: model 1 - phy")
-summary(model1)
-
-save(model1, file = "output_models/model1_FWO.RData")
-
-fitted <-
-  fitted(model1) %>% as.data.frame() %>% bind_cols(grambank_phylopath_compl)
-filepath_fitted <-
-  paste0("output_tables/", "fitted_set1_model", "1_FWO", ".csv", collapse = "")
-write.csv(fitted, filepath_fitted)
-
-residuals <-
-  residuals(model1) %>% as.data.frame() %>% bind_cols(grambank_phylopath_compl)
-filepath_residuals <-
-  paste0("output_tables/",
-         "residuals_set1_model",
-         "1_FWO",
-         ".csv",
-         collapse = "")
-write.csv(residuals, filepath_residuals)
-
-ranef_1 <- ranef(model1)
-save(ranef_1, file = "output_models/random_effects_1_FWO.RData")
-
-fixef_1 <- fixef(model1)
-save(fixef_1, file = "output_models/fixed_effects_1_FWO.RData")
+# #random effect of phylogenetic relationships
+# model1 <- brm(
+#   data = grambank_phylopath_compl,
+#   data2 = list(A = A),
+#   family = "bernoulli",
+#   formula = Free_word_order ~ 1 + (1 | gr(Glottocode, cov = A)),
+#   prior = weakly_informative,
+#   control = list(adapt_delta = 0.99),
+#   #default adapt_delta=0.8
+#   iter = 10000,
+#   cores = 4,
+#   sample_prior = TRUE,
+#   save_pars = save_pars(all = TRUE),
+#   seed = 12345
+# )
+# 
+# cat("Model summary: model 1 - phy")
+# summary(model1)
+# 
+# save(model1, file = "output_models/model1_FWO.RData")
+# 
+# fitted <-
+#   fitted(model1) %>% as.data.frame() %>% bind_cols(grambank_phylopath_compl)
+# filepath_fitted <-
+#   paste0("output_tables/", "fitted_set1_model", "1_FWO", ".csv", collapse = "")
+# write.csv(fitted, filepath_fitted)
+# 
+# residuals <-
+#   residuals(model1) %>% as.data.frame() %>% bind_cols(grambank_phylopath_compl)
+# filepath_residuals <-
+#   paste0("output_tables/",
+#          "residuals_set1_model",
+#          "1_FWO",
+#          ".csv",
+#          collapse = "")
+# write.csv(residuals, filepath_residuals)
+# 
+# ranef_1 <- ranef(model1)
+# save(ranef_1, file = "output_models/random_effects_1_FWO.RData")
+# 
+# fixef_1 <- fixef(model1)
+# save(fixef_1, file = "output_models/fixed_effects_1_FWO.RData")
 
 
 #random effects of phylogenetic and spatial relationships (spatial matrix)
@@ -120,7 +120,7 @@ model2 <- brm(
   prior = weakly_informative,
   control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 10000,
+  iter = 12000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
@@ -166,7 +166,7 @@ model3 <- brm(
   prior = weakly_informative,
   control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 10000,
+  iter = 12000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
