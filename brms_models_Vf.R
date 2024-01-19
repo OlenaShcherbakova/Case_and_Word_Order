@@ -124,7 +124,7 @@ model2 <- brm(
   prior = weakly_informative,
   control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 15000,
+  iter = 25000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
@@ -174,7 +174,7 @@ model3 <- brm(
   prior = weakly_informative,
   control = list(adapt_delta = 0.99),
   #default adapt_delta=0.8
-  iter = 15000,
+  iter = 25000,
   cores = 4,
   sample_prior = TRUE,
   save_pars = save_pars(all = TRUE),
