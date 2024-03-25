@@ -23,15 +23,12 @@ source("generating_languages_sample_list.R")
 
 #the scripts for brms analyses and model comparisons below are time-consuming, so the output information is available in output_models and output_tables folders
 source("brms_models_NC.R")
-source("brms_LOO.R")
 source("brms_kfold.R")
 
 source("brms_models_Vf.R")
-source("brms_LOO_Vf.R")
 source("brms_kfold_Vf.R")
 
 source("brms_models_FWO.R")
-source("brms_LOO_FWO.R")
 source("brms_kfold_FWO.R")
 
 #generating the table of outputs from these scripts:
