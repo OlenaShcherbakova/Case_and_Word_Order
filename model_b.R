@@ -71,8 +71,7 @@ weakly_informative <- c(
 )
 
 fwo <- brms::bf(Free_word_order ~ 1 + Nominal_case +
-                      (1 | gr(Glottocode, cov = A)) +
-                      (1 | gr(Glottocode2, cov = spatial_covar_mat_local)))
+                      (1 | gr(Glottocode, cov = A)))
 
 vf <- brms::bf(Verb_final ~ 1 + Nominal_case +
                  (1 | gr(Glottocode, cov = A)))
@@ -80,7 +79,7 @@ vf <- brms::bf(Verb_final ~ 1 + Nominal_case +
 #model b where Free_word_order is predicted by Nominal_case and spatial effects
 model_b <- brm(
   data = grambank_phylopath_compl,
-  data2 = list(A = A, spatial_covar_mat_local = spatial_covar_mat_local),
+  data2 = list(A = A),
   family = "bernoulli",
   
   fwo + vf + set_rescor(FALSE),
