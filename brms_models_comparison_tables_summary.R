@@ -1,7 +1,6 @@
 #combining tables from brms analysis outputs
 
 #NC model comparison
-
 kfold <- read.csv("output_tables/kfold_comparison.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "K-fold CV") %>%
@@ -14,7 +13,6 @@ comparison_NC <- as.data.frame(rbind(kfold)) %>%
   relocate(`Response variable`, .after = "Model")
 
 #Vf model comparison
-
 kfold <- read.csv("output_tables/kfold_comparison_Vf.csv") %>%
   rename(Model = "X") %>%
   mutate(`Cross-validation type` = "K-fold CV") %>%
