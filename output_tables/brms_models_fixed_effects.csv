@@ -1,7 +1,7 @@
 "","Response","Predictor","Model","Estimate","Est.Error","Q2.5","Q97.5"
-"1","Flexible word order","Case","model b",0.38,0.18,0.02,0.72
-"2","Verb-final","Case","model b",1.76,0.59,0.67,3
-"3","Flexible word order","Case","model c",0.37,0.18,0.02,0.73
-"4","Case","Verb-final","model c",1.49,0.33,0.85,2.17
+"1","Flexible word order","Case","model b",0.33,0.18,-0.02,0.68
+"2","Verb-final","Case","model b",1.76,0.59,0.67,3.01
+"3","Flexible word order","Case","model c",0.34,0.18,-0.01,0.68
+"4","Case","Verb-final","model c",1.49,0.33,0.86,2.15
 "5","Verb-final","Case","model d",1.75,0.59,0.66,2.99
 "6","Case","Flexible word order","model d",0.25,0.22,-0.18,0.68
